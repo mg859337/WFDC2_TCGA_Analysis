@@ -6,7 +6,7 @@ DEGs <- read.table("DEGs.txt") # This is a list of DEGs from DESeq2 saved as a t
 
 degs <- as.character(DEGs$V1)
 
-conversion <- mapIds(org.Mm.eg.db, degs, 'ENTREZID', 'ENSEMBL')
+conversion <- mapIds(org.Hs.eg.db, degs, 'ENTREZID', 'ENSEMBL')
 
 
 # Load up the packages needed
